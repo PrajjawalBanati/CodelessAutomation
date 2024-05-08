@@ -1,0 +1,106 @@
+h1 {
+    text-align: center;
+}
+
+#testcaseHeader {
+    text-align: center;
+}
+
+.inputBox {
+    padding-bottom: 10px;
+}
+
+.inputTestcaseDetails{
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 20px;
+    width: 50%;
+    border-radius: 10px;
+    
+}
+
+.inputHeaders {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#Submit{
+    background-color: #a4fc72;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border-color: white;
+}
+
+#Submit:hover{
+    background-color: rgb(1, 255, 1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#RecorderSimulator{
+    background-color: rgb(251, 96, 96);
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border-color: white;
+}
+
+#RecorderSimulator:hover{
+    background-color: red;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.stepsplayground{
+   display: flex; 
+   margin-top: 20px;
+}
+
+#stepsgeneration{
+    align-items: center;
+    width: 840px;
+    height: 1080px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#playground{
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+iframe{
+    width: 1080px;
+    height: 1080px;
+}
+
+.footers{
+    text-align: right;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#submitCase{
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border-color: white;
+    background-color: rgb(67, 81, 237);
+    color:white;
+    font-size: 15px;
+}
+
+#submitCase:hover{
+    background-color: rgb(7, 7, 137);
+    transition: 0.7s;
+    cursor: pointer;
+}

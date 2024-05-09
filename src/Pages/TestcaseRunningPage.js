@@ -1,34 +1,29 @@
+import { useNavigate } from "react-router-dom";
+import Typography from '@mui/material/Typography';
+import { Box, Button, Container, Grid, Stack, TextField } from "@mui/material";
+import ReplayIcon from '@mui/icons-material/Replay';
+import Steeper from "../Pages/steeper"
 const TestcaseRunningPage = () => {
+    var navigate = useNavigate();
     return (
-        <div>
-            <h1>Testcase Running Page</h1>
-            <div id = "testcaseHeader">
-                <div className="detailsBox">
-                    <span className="inputHeaders">Testcase Name:-</span>
-                    <label className="labelTestcaseDetails"></label>
-                </div>
-                <div className="detailsBox">
-                    <span className="inputHeaders" >Description:-</span>
-                    <label className="labelTestcaseDetails"></label>
-                </div>
-                <div className="buttonSection">
-                    <button id = "replayTest"> Replay Testcase</button>
-                </div>
-            </div>
-            <div className="stepsplayground">
-                <div id = "stepsgeneration">
-                    Show your steps
-                </div>
-                <div id="playground">
-                    <iframe src="https://www.google.com/" title="HTML IFrame Syntax">
-
-                    </iframe>
-                </div>
-            </div>
-            <div className="footers">
-                <button id="submitCase"> Close</button>
-            </div>
-        </div>
+        <Container maxWidth="xl">
+            <Typography variant="h4" align="center" padding={5}><b>Testcase Running Page</b></Typography>
+            <Stack spacing={2}>
+                <TextField disabled variant="outlined" fullWidth label="Testcase ID"><b></b></TextField>
+                <TextField disabled variant="outlined" fullWidth label="Testcase Name"><b></b></TextField>
+                <TextField disabled variant="outlined" fullWidth label="Description"><b></b></TextField>
+                <Stack direction="row" spacing={2}>
+                    <Button variant="contained" startIcon={<ReplayIcon/>}><b>Replay Steps</b></Button>
+                </Stack>
+                <Stack direction="row" spacing={6}>
+                    <Steeper/>
+                    <Box sx={{ bgcolor: '#cfe8fc', height: '100vh', width:'300vh' }} />
+                </Stack>
+                <Button variant="contained" onClick={()=>{
+                    navigate('/environment')
+                }}><b>Close</b></Button>
+            </Stack>
+        </Container>
     );
 }
 
